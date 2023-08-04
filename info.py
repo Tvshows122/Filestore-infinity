@@ -22,7 +22,7 @@ FSUB_UPDATE_LINK=str(environ.get('FSUB_UPDATE_LINK',''))
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/bc0d250c9f0f5b21f7ce9.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/adef09509aa4d2ef3f52a.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
