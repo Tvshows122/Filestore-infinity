@@ -56,9 +56,9 @@ async def start(client, message):
             return
 
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('')
             ],[
-            InlineKeyboardButton('♻️ Search Here ♻️', switch_inline_query_current_chat='')
+            InlineKeyboardButton('')
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
