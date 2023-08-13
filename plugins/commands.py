@@ -36,9 +36,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('')
+            InlineKeyboardButton('♻️ Search Here ♻️', switch_inline_query_current_chat='')
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -56,9 +56,9 @@ async def start(client, message):
             return
 
         buttons = [[
-            InlineKeyboardButton('')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('')
+            InlineKeyboardButton('♻️ Search Here ♻️', switch_inline_query_current_chat='')
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
